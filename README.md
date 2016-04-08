@@ -1,2 +1,13 @@
 # utils
-A collection of useful code utils
+
+> 将平时常用的一些零碎小代码收集起来的工具包
+
+
+### enum
+
+用于python的枚举，避免魔鬼数字。提升代码可读性。
+
+
+### dictwrapper
+
+简单的一个字典的包装器，能由原来的a['b']改成方便写的a.b
