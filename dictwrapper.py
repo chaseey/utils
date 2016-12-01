@@ -1,5 +1,6 @@
 # coding=UTF-8
 
+
 class DictWrapper(dict):
 
     def __getattr__(self, name):

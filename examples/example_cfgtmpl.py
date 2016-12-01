@@ -11,7 +11,7 @@ if __name__ == "__main__":
     dest_file = os.path.join(current_dir, "supervisord.conf")
 
     variables = {
-        'prj_name': 'test', 
+        'prj_name': 'test',
         'prj_path': current_dir,
         'log_path': os.path.join(current_dir, 'log'),
         'start_script': 'test.py'

@@ -27,4 +27,4 @@
 
 ### 如何测试
 
-获取代码到本地后，可以这样测试`python -m utils.example.example_enum`
+获取代码到本地后，可以这样测试`python -m utils.examples.example_enum`

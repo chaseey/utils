@@ -3,6 +3,7 @@
 import os
 import string
 
+
 class CfgTemplate(object):
 
     @staticmethod

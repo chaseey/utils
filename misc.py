@@ -2,6 +2,7 @@
 
 import math
 
+
 def genr_sublist(org_list, slice_size):
     """
     >>> for temp_list in genr_sublist(range(20), 5):

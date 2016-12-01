@@ -1,11 +1,15 @@
 # coding=utf-8
 
+
 class EnumType(object):
+
     def __init__(self, value, desc):
         self.value = value
         self.desc = desc
 
+
 class MetaEnum(type):
+
     def __new__(cls, name, bases, attrs):
         if name != 'MetaEnum':
             enum_choices = []
@@ -21,14 +25,15 @@ class MetaEnum(type):
                 'desc_dict': enum_desc_dict
             })
             attrs.update(enum_value_dict)
-        new_cls = super(MetaEnum, cls).__new__(cls,name,bases,attrs)
+        new_cls = super(MetaEnum, cls).__new__(cls, name, bases, attrs)
         return new_cls
+
 
 class BaseEnum(object):
     __metaclass__ = MetaEnum
 
-    choices = () # 字段choices
-    desc_dict = {} # 描述字段
+    choices = ()  # 字段choices
+    desc_dict = {}  # 描述字段
 
     @classmethod
     def display(cls, value):
