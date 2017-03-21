@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from utils.enum import EnumType, BaseEnum
+from enum import EnumType, BaseEnum
 
 
 class GenderEnum(BaseEnum):
@@ -14,3 +14,4 @@ if __name__ == '__main__':
     print GenderEnum.male
     print GenderEnum.choices
     print GenderEnum.display(0)
+

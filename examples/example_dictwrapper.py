@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from utils.dictwrapper import DictWrapper
+from dictwrapper import DictWrapper
 
 
 if __name__ == "__main__":
@@ -18,4 +18,4 @@ if __name__ == "__main__":
     books = DictWrapper.load_dict(book_list)
 
     for book in books:
-        print "《%s》- %s" % (book.name, book.author.name)
+        print u"《%s》- %s" % (book.name, book.author.name)
