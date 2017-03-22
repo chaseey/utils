@@ -1,4 +1,4 @@
-# coding=utf-8
+#coding=utf-8
 
 
 class EnumType(object):
@@ -71,4 +71,6 @@ if __name__ == '__main__':
     print GenderEnum.male
     print GenderEnum.choices
     print GenderEnum.display(0)
+
+
 
