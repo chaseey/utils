@@ -21,7 +21,11 @@
 ip转换为字节， 节省存储空间
 
 
+### win_key_simulate
+模拟按键
 
+### get_stock 
+从 `asstocks.com` 取得股票行情
 
 --- 
 还没介绍的正在测试中
