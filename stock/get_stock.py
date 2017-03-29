@@ -35,7 +35,7 @@ class CacheData(object):
     def __init__(self):
         self.file_path = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
-            'cache.txt'
+            'get_stock_cache.txt'
         )
 
     def get(self):
