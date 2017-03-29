@@ -1,15 +1,19 @@
 #coding=utf-8
 __author__ = 'kidd'
 
+import six
 import wx
 from base import MyFrame1
+import threading
+
 
 class MainWindow(MyFrame1):
+    # MARKET_CHOICES_YUEGUI = [u"粤贵银", u"粤贵钯", u'粤贵铂']
+    # MARKET_CHOICES_GUANDONG = [u'冠东油', u'冠东油B']
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        # self.static_text_price_out.Hide()
-        # self.text_price_out.Hide()
+
 
     def func_append(self, event):
         market = self.choice_market.GetString(self.choice_market.GetSelection())
@@ -46,6 +50,9 @@ class MainWindow(MyFrame1):
 
         self.text_output.SetValue(output.lstrip())
 
+    def event_choice_market(self, event):
+        market = self.choice_market.GetString(self.choice_market.GetSelection())
+
 
 
     def func_clean(self, event):
@@ -70,5 +77,8 @@ if __name__ == '__main__':
     main_win = MainWindow(None)
     main_win.Show()
     app.MainLoop()
+
+
+
 
 

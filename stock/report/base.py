@@ -30,19 +30,19 @@ class MyFrame1(wx.Frame):
         fgSizer2.SetFlexibleDirection(wx.BOTH)
         fgSizer2.SetNonFlexibleGrowMode(wx.FLEX_GROWMODE_SPECIFIED)
 
-        self.m_staticText3 = wx.StaticText(self, wx.ID_ANY, u"哪个盘？", wx.Point(-1, -1), wx.Size(-1, -1), 0)
+        self.m_staticText3 = wx.StaticText(self, wx.ID_ANY, u"哪个盘", wx.Point(-1, -1), wx.Size(-1, -1), 0)
         self.m_staticText3.Wrap(-1)
         self.m_staticText3.SetFont(wx.Font(12, 70, 90, 90, False, wx.EmptyString))
         self.m_staticText3.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText3.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText3, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText3, 0, wx.ALL | wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT, 5)
 
         choice_marketChoices = [u"粤贵", u"冠东"]
         self.choice_market = wx.RadioBox(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize,
                                          choice_marketChoices, 1, wx.RA_SPECIFY_ROWS)
-        self.choice_market.SetSelection(1)
-        fgSizer2.Add(self.choice_market, 0, wx.ALL, 5)
+        self.choice_market.SetSelection(0)
+        fgSizer2.Add(self.choice_market, 0, wx.ALL | wx.ALIGN_CENTER_HORIZONTAL | wx.ALIGN_CENTER_VERTICAL, 5)
 
         self.m_staticText31 = wx.StaticText(self, wx.ID_ANY, u"客户名", wx.DefaultPosition, wx.DefaultSize, 0)
         self.m_staticText31.Wrap(-1)
@@ -50,7 +50,7 @@ class MyFrame1(wx.Frame):
         self.m_staticText31.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText31.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText31, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText31, 0, wx.ALL | wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT, 5)
 
         self.text_client_name = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
         fgSizer2.Add(self.text_client_name, 0, wx.ALL, 5)
@@ -61,7 +61,7 @@ class MyFrame1(wx.Frame):
         self.m_staticText312.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText312.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText312, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText312, 0, wx.ALL | wx.ALIGN_RIGHT | wx.ALIGN_CENTER_VERTICAL, 5)
 
         choice_goodsChoices = [u"粤贵银", u"粤贵钯", u"粤贵铂", u"粤东油", u"粤东油B"]
         self.choice_goods = wx.Choice(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, choice_goodsChoices, 0)
@@ -74,7 +74,7 @@ class MyFrame1(wx.Frame):
         self.m_staticText3111.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText3111.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText3111, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText3111, 0, wx.ALL | wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT, 5)
 
         choice_actionChoices = [u"建仓", u"平仓"]
         self.choice_action = wx.RadioBox(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize,
@@ -88,7 +88,7 @@ class MyFrame1(wx.Frame):
         self.m_staticText311.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText311.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText311, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText311, 0, wx.ALL | wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT, 5)
 
         choice_directionChoices = [u"揸", u"沽"]
         self.choice_direction = wx.RadioBox(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize,
@@ -102,7 +102,7 @@ class MyFrame1(wx.Frame):
         self.m_staticText31111.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText31111.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText31111, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText31111, 0, wx.ALL | wx.ALIGN_RIGHT | wx.ALIGN_CENTER_VERTICAL, 5)
 
         self.text_number = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
         fgSizer2.Add(self.text_number, 0, wx.ALL, 5)
@@ -113,7 +113,7 @@ class MyFrame1(wx.Frame):
         self.m_staticText311111.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.m_staticText311111.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.m_staticText311111, 0, wx.ALL, 5)
+        fgSizer2.Add(self.m_staticText311111, 0, wx.ALL | wx.ALIGN_RIGHT | wx.ALIGN_CENTER_VERTICAL, 5)
 
         self.text_price_in = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
         fgSizer2.Add(self.text_price_in, 0, wx.ALL, 5)
@@ -124,7 +124,7 @@ class MyFrame1(wx.Frame):
         self.static_text_price_out.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_HIGHLIGHT))
         self.static_text_price_out.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
 
-        fgSizer2.Add(self.static_text_price_out, 0, wx.ALL, 5)
+        fgSizer2.Add(self.static_text_price_out, 0, wx.ALL | wx.ALIGN_RIGHT | wx.ALIGN_CENTER_VERTICAL, 5)
 
         self.text_price_out = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
         fgSizer2.Add(self.text_price_out, 0, wx.ALL, 5)
@@ -139,7 +139,7 @@ class MyFrame1(wx.Frame):
 
         fgSizer2.AddSpacer((0, 0), 1, wx.EXPAND, 5)
 
-        bSizer6.Add(fgSizer2, 1, wx.EXPAND, 5)
+        bSizer6.Add(fgSizer2, 1, wx.EXPAND | wx.ALIGN_CENTER_HORIZONTAL, 5)
 
         self.text_output = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size(300, 120),
                                        wx.TE_MULTILINE)
@@ -151,6 +151,7 @@ class MyFrame1(wx.Frame):
         self.Centre(wx.BOTH)
 
         # Connect Events
+        self.choice_market.Bind(wx.EVT_RADIOBOX, self.event_choice_market)
         self.choice_action.Bind(wx.EVT_RADIOBOX, self.func_radio_type_in)
         self.choice_direction.Bind(wx.EVT_RADIOBOX, self.func_radio_type_in)
         self.button_ok.Bind(wx.EVT_BUTTON, self.func_append)
@@ -160,6 +161,9 @@ class MyFrame1(wx.Frame):
         pass
 
     # Virtual event handlers, overide them in your derived class
+    def event_choice_market(self, event):
+        event.Skip()
+
     def func_radio_type_in(self, event):
         event.Skip()
 
